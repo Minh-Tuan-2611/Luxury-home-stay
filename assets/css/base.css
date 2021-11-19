@@ -1,0 +1,88 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #ccc;
+    --navbar-height: 34px;
+    --header-height: 80px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 16px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* Responsive */
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.grid__column-2-5 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+.grid__column-2-3 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 33.3333%;
+}
+
+.grid__column-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 25%;
+}
+
+.grid__column-2-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 50%;
+}
+
+.slideshow {
+    overflow: hidden;
+    display: flex;
+    overflow-x: auto;
+}
+
+.slide {
+    flex-shrink: 0;
+    width: 100%;
+}
+
+@keyframes slides {
+    20% {
+        margin-left: 0px;
+    }
+    30% {
+        margin-left: -728px;
+    }
+    50% {
+        margin-left: -728px;
+    }
+    60% {
+        margin-left: -1456px;
+    }
+    80% {
+        margin-left: -1456px;
+    }
+}
